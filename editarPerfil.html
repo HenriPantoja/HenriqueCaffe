@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baristas</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="/Website-Cafeteria-HTML-y-CSS-main/index.html" target="_blank"
+                            rel="noopener noreferrer">Henrique Coffe</a>
+                    </h1>
+                </div>
+                <div class="container-user">
+                    <a href="/perfilPublico.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+
+                        <span class="text"></span><a class="carrito" href="paginaPago.html">Carrito</a>
+                        <span class="number">(4)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+				<ul class="menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#">Moca Helado</a></li>
+					<li><a href="#">Expreso</a></li>
+					<li><a href="#">Capuchino</a></li>
+					<li><a href="shop.html">Tienda</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar...">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main class="main-content">
+
+        <section class="container">
+            <form action="/update-profile" method="POST">
+                <div class="edit-profile">
+                    <div class="form-row">
+                        <img src="img/public-profile-photo.png" alt="Profile Picture" id="profile-picture-button" style="cursor: pointer;">
+                        <label for="profile-picture" class="photo-perfil-button">Cambiar Foto Perfil</label>
+                        <input type="file" id="profile-picture" name="profile-picture">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" value="Henrique Pantoja">
+                    </div>
+                    <div class="form-row">
+                        <label for="age">Fecha de nacimiento</label>
+                        <input type="date" id="fechanacimiento" name="fechanacimiento" value="1992-07-20">
+                    </div>
+                    <div class="form-row">
+                        <label for="location">Pais</label>
+                        <input type="text" id="location" name="location" value="España">
+                    </div>
+                    <div class="form-row">
+                        <label for="instagram">Instagram</label>
+                        <input type="text" id="instagram" name="instagram" value="https://www.instagram.com/coffeeuser">
+                    </div>
+                    <div class="form-row">
+                        <label for="twitter">Twitter</label>
+                        <input type="text" id="twitter" name="twitter" value="https://twitter.com/coffeeuser">
+                    </div>
+                    <div class="form-row">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio"
+                            name="bio">Apasionado por el café en todas sus formas y aromas. Amo descubrir nuevos granos, explorar métodos de preparación y disfrutar de la complejidad de cada taza. Para mí, el café no es solo una bebida, es un ritual que despierta los sentidos y crea momentos inolvidables. ¡Siempre en busca de la mezcla perfecta y el equilibrio entre cuerpo y sabor!</textarea>
+                    </div>
+                    <div class="form-row">
+                        <label for="favorite-products">Productos Favoritos</label>
+                        <textarea id="favorite-products" name="favorite-products">
+                            Colombian Supremo
+                            Ethiopian Yirgacheffe
+                            Aeropress
+                            Hario V60
+                        </textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="button" id="updateProfileBtn">Update Profile</button>
+                    </div>
+                    
+                </div>
+                
+                
+            </form>
+            </div>
+        </section>
+        <script>
+            // Añadir evento click al botón de la foto de perfil
+            document.getElementById("profile-picture-button").addEventListener("click", function() {
+                document.getElementById("profile-picture").click();
+            });
+        </script>
+        <script>
+            document.getElementById('updateProfileBtn').addEventListener('click', function() {
+                window.location.href = 'perfilpublico.html';
+            });
+        </script>
+        
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>
+                            Dirección: 71 Pennington Lane Vernon Rockville, CT
+                            06066
+                        </li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Fax: 55555300</li>
+                        <li>EmaiL: baristas@support.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información Delivery</a></li>
+                        <li><a href="terminos_privacidad.html">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contactános</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Historial de ordenes</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Boletín informativo</p>
+
+                    <div class="content">
+                        <p>
+                            Suscríbete a nuestros boletines ahora y mantente al
+                            día con nuevas colecciones y ofertas exclusivas.
+                        </p>
+                        <input type="email" placeholder="Ingresa el correo aquí...">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    Desarrollado por "Henrique Pantoja" 2023
+                </p>
+
+                <img src="img/payment.png" alt="Pagos">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

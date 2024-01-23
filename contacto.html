@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baristas</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="/Website-Cafeteria-HTML-y-CSS-main/index.html" target="_blank"
+                            rel="noopener noreferrer">Henrique Coffe</a>
+                    </h1>
+                </div>
+                <div class="container-user">
+                    <a href="/perfilPublico.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+
+                        <span class="text"></span><a class="carrito" href="paginaPago.html">Carrito</a>
+                        <span class="number">(4)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Moca Helado</a></li>
+                    <li><a href="#">Expreso</a></li>
+                    <li><a href="#">Capuchino</a></li>
+                    <li><a href="shop.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar...">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main class="main-content">
+        <section class="container container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-plane-up"></i>
+                <div class="feature-content">
+                    <span>Envío gratuito a nivel mundial</span>
+                    <p>En pedido superior a $150</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Contrareembolso</span>
+                    <p>100% garantía de devolución de dinero</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Tarjeta regalo especial</span>
+                    <p>Ofrece bonos especiales con regalo</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Servicio al cliente 24/7</span>
+                    <p>LLámenos 24/7 al 123-456-7890</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <div class="container">
+                <h2 class="heading-1">Contáctenos</h2>
+                <p class="contact-description">Gracias por visitar Henrique Coffee. Para consultas o comentarios, por
+                    favor, completa el formulario a continuación o contacta con nosotros directamente. Estamos aquí para
+                    ayudarte.</p>
+                <div class="contact-container">
+                    <div class="contact-details">
+                        <div class="contact-info">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>121 Rock Street, 21 Avenue, Nueva York, NY 92103-9000</p>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>hello@company.com</p>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>1 (234) 567-8910</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps?q=New+York,+NY,+USA&output=embed" allowfullscreen=""
+                            loading="lazy"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-card">
+            <h2>¡Contáctame!</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Apellido" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+        
+
+        <footer class="footer">
+            <div class="container container-footer">
+                <div class="menu-footer">
+                    <div class="contact-info">
+                        <p class="title-footer">Información de Contacto</p>
+                        <ul>
+                            <li>
+                                Dirección: 71 Pennington Lane Vernon Rockville, CT
+                                06066
+                            </li>
+                            <li>Teléfono: 123-456-7890</li>
+                            <li>Fax: 55555300</li>
+                            <li>EmaiL: baristas@support.com</li>
+                        </ul>
+                        <div class="social-icons">
+                            <span class="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </span>
+                            <span class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </span>
+                            <span class="youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </span>
+                            <span class="pinterest">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </span>
+                            <span class="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="information">
+                        <p class="title-footer">Información</p>
+                        <ul>
+                            <li><a href="#">Acerca de Nosotros</a></li>
+                            <li><a href="#">Información Delivery</a></li>
+                            <li><a href="terminos_privacidad.html">Politicas de Privacidad</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Contactános</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="my-account">
+                        <p class="title-footer">Mi cuenta</p>
+
+                        <ul>
+                            <li><a href="#">Mi cuenta</a></li>
+                            <li><a href="#">Historial de ordenes</a></li>
+                            <li><a href="#">Lista de deseos</a></li>
+                            <li><a href="#">Boletín</a></li>
+                            <li><a href="#">Reembolsos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="newsletter">
+                        <p class="title-footer">Boletín informativo</p>
+
+                        <div class="content">
+                            <p>
+                                Suscríbete a nuestros boletines ahora y mantente al
+                                día con nuevas colecciones y ofertas exclusivas.
+                            </p>
+                            <input type="email" placeholder="Ingresa el correo aquí...">
+                            <button>Suscríbete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>
+                        Desarrollado por "Henrique Pantoja" 2023
+                    </p>
+
+                    <img src="img/payment.png" alt="Pagos">
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
