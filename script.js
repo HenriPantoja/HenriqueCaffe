@@ -1,27 +1,30 @@
-// Obteniendo el modal
+// obteniendo el modall y el butón de cerrar
 var modal = document.getElementById("termsModal");
-
-// Obteniendo el elemento <span> que cierra el modal
 var span = document.getElementsByClassName("close")[0];
 
-// Cuando el usuario hace clic en <span> (x), cierra el modal
-span.onclick = function() {
+//evento para cerrar el modal con el botón de cerrar.
+span.onclick = function () {
     modal.style.display = "none";
 }
 
-// Abre el modal automáticamente al cargar la página
-window.onload = function() {
-    modal.style.display = "block";
+// comprobando si el usuario ya acepto los terminos y condiciones.
+if (!localStorage.getItem('terminos-aceptados')) {
+    window.onload = function () {
+        modal.style.display = "block";
+    }
+} else {
+    modal.style.display = "none";
 }
 
-document.getElementById('accept').addEventListener('click', function() {
-    // Código para manejar la aceptación
+// evento para el butón de aceptar
+document.getElementById('accept').addEventListener('click', function () {
+    localStorage.setItem('terminos-aceptados', true);
     alert('Has aceptado los términos y condiciones.');
-    // Redireccionar a otra página o realizar otra acción
+    modal.style.display = "none";
 });
 
-document.getElementById('reject').addEventListener('click', function() {
-    // Código para manejar el rechazo
+// evento para el butón de rechazar.
+document.getElementById('reject').addEventListener('click', function () {
     alert('Has rechazado los términos y condiciones.');
-    // Posiblemente redirigir a otra página o mostrar un mensaje
+    modal.style.display = "none";
 });
