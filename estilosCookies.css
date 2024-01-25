@@ -1,55 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
-	--primary-color: #c7a17a;
-	--background-color: #f9f5f0;
-	--dark-color: #151515;
+    --primary-color: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
 }
 
 .cookies-info-container {
-    background-color: #fff; /* Fondo blanco para la tarjeta */
-    border: 1px solid #c7a17a; /* Borde sutil */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    padding: 20px; /* Espaciado interno */
-    max-width: 800px; /* Ancho máximo */
-    margin: 20px auto; /* Centrar y dar espacio alrededor */
-    font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+    background-color: #fff;
+    /* Fondo blanco para la tarjeta */
+    border: 1px solid #c7a17a;
+    /* Borde sutil */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra para dar profundidad */
+    padding: 20px;
+    /* Espaciado interno */
+    max-width: 800px;
+    /* Ancho máximo */
+    margin: 20px auto;
+    /* Centrar y dar espacio alrededor */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente Roboto */
 }
 
 .cookies-info-container h1,
 .cookies-info-container h3 {
-    color: var(--primary-color); /* Color de los títulos, asumiendo que --primary-color está definido */
-    margin-bottom: 10px; /* Espacio debajo de los títulos */
+    color: var(--primary-color);
+    /* Color de los títulos, asumiendo que --primary-color está definido */
+    margin-bottom: 10px;
+    /* Espacio debajo de los títulos */
 }
 
 .cookies-info-container p,
 .cookies-info-container a {
-    color: #666; /* Color de texto y enlaces */
-    margin-bottom: 10px; /* Espacio debajo de los párrafos y enlaces */
+    color: #666;
+    /* Color de texto y enlaces */
+    margin-bottom: 10px;
+    /* Espacio debajo de los párrafos y enlaces */
 }
 
 .cookies-info-container a {
-    text-decoration: none; /* Remover subrayado de enlaces */
-    color: var(--primary-color); /* Color de enlaces */
+    text-decoration: none;
+    /* Remover subrayado de enlaces */
+    color: var(--primary-color);
+    /* Color de enlaces */
 }
 
 .cookies-info-container a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse sobre enlaces */
+    text-decoration: underline;
+    /* Subrayado al pasar el mouse sobre enlaces */
 }
+
 .back-button {
-    background-color:var(--primary-color); /* Utiliza la variable de color primario */
-    color: #020202; /* Texto en color blanco */
-    border: 1px solid transparent; /* Borde transparente (ajustar si es necesario) */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor en forma de mano al pasar el mouse */
-    font-family: 'Roboto', sans-serif; /* Fuente Roboto (o tu fuente preferida) */
-    font-size: 1rem; /* Tamaño del texto */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    transition: background-color 0.3s; /* Transición suave al cambiar de color */
-    text-decoration: none; /* Sin subrayado */
+    background-color: var(--primary-color);
+    /* Utiliza la variable de color primario */
+    color: #020202;
+    /* Texto en color blanco */
+    border: 1px solid transparent;
+    /* Borde transparente (ajustar si es necesario) */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cursor en forma de mano al pasar el mouse */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente Roboto (o tu fuente preferida) */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    transition: background-color 0.3s;
+    /* Transición suave al cambiar de color */
+    text-decoration: none;
+    /* Sin subrayado */
 }
 
 .back-button:hover {
-    background-color: #d9534f; /* Color al pasar el mouse */
+    background-color: #d9534f;
+    /* Color al pasar el mouse */
 }
